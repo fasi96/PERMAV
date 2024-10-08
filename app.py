@@ -2,6 +2,19 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Add this near the top of your file, after the imports
+st.markdown("""
+# Strategic Life Units Visualization App
+
+This app helps you visualize and analyze 16 Strategic Life Units (SLUs) in your life. 
+Rate the importance, satisfaction, and time spent on each unit to generate a personalized bubble chart.
+
+For more information on Strategic Life Units, check out this 
+[YouTube video](https://www.youtube.com/watch?v=dbiNhAZlXZk&t=390s).
+
+---
+""")
+
 # Life Units
 life_units = [
     "Significant Other", "Family", "Friendship", 
